@@ -1,0 +1,981 @@
+:root {
+    --prim_boj: #5C415D;
+    --sek_boj:#ADA0A6;
+    --tam_boj:#361134;
+    --sve_boj:#F9E7E7;
+}
+
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+
+    
+
+}
+
+
+input {
+    max-width: 900px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--sve_boj);
+}
+
+ul {
+    list-style-type: none;
+}
+
+details {
+    border-radius: 10px;
+    transition: ease-out .5s;
+}
+
+details[open] {
+    background-color:rgba(118, 7, 221, 0.2);
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    max-width: 100%;
+}
+
+
+.kontenjer {
+    max-width: 1300px;
+    padding: 0 20px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flexk {
+    flex-direction: column;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.karta1 {
+    padding: 20px;
+    background: var(--sek_boj);
+  
+  
+}
+
+.karta2 {
+    padding: 10px;
+    background: var(--tam_boj);
+    color: var(--sve_boj);
+
+
+}
+
+.karta3 {
+    padding: 10px;
+    background-color: black;
+    color: var(--sve_boj);
+}
+
+.prim_dug {
+    display:inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--tam_boj);
+    color: var(--sve_boj);
+    width: 100%;
+    border:none;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(1,-1.25,0,-0.17);
+}
+
+.sek_dug {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: var(--sve_boj);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(1,-1.25,0,-0.17);
+}
+
+
+.prim_dug:hover,
+.sek_dug:hover {
+    transform: scale(0.9);
+}
+
+/* POCETNA_STRANA.HTML */
+/* Sekcija Naslova */
+
+.cincin {
+    color: var(--sve_boj);
+}
+
+.SN {
+    background-color: var(--prim_boj);
+   
+    
+}
+
+
+.SN .flex {
+    justify-content: space-between;
+   
+}
+
+nav ul, .soci ul {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+
+nav ul li a {
+    color: var(--sve_boj);
+    padding: 15px;
+    transition: all 0.3s cubic-bezier(0,1.4,1,-1.22);
+    font-size: 1.3rem;
+ }
+
+ nav ul li a:hover {
+    background-color: var(--sve_boj);
+    color:var(--prim_boj);
+}
+
+
+
+/* Baner */
+
+.BAN {
+    background-image: url(Slike/cinemaban.jpg);
+    background-size: cover;
+    height: 430px;
+}
+
+.BAN .kontenjer hr {
+    margin: 20px auto;
+    width: 300px;
+    height: 5px;
+    border: 3px solid var(--sve_boj);
+    box-shadow: 10px 2px 5px rgba(118, 7, 221);
+}
+
+
+.txt_ban {
+    max-width: 600px;
+    border-radius: 10px 40px;
+    box-shadow: 10px 5px 5px rgba(118, 7, 221);
+    margin: 40px auto;
+}
+
+
+/* Repertoar i Rezervacija */
+
+.RIR .flex {
+    flex-wrap: wrap;    
+  
+ 
+}
+
+.rez {
+    border-left: var(--tam_boj) 2px solid;
+}
+
+.rez a i, 
+.rep a i {
+    transition: 1s ease;
+    color: black;
+    animation: anim1 10s linear 5s infinite;
+}
+
+
+.rez a i:hover,
+.rep a i:hover {
+   
+    transform: rotate(360deg);
+    color: var(--prim_boj);
+
+}
+
+
+
+
+/* Citat */
+
+.CIT {
+    background: black;
+    color: var(--sve_boj);
+}
+
+
+.CIT .grid p {
+    justify-self: flex-end;
+}
+
+/*Podnozje */
+
+.POD {
+    background: var(--tam_boj);
+}
+
+.POD .flex {
+    justify-content: space-around;
+}
+
+.POD h3 {
+     color: var(--sve_boj);
+}
+
+.soci ul li {
+    margin: 0 20px;
+}
+
+.soci ul li a {
+    color: var(--sve_boj);
+    transition: 0.5s ease-out;
+}
+
+.soci ul li a.youtube:hover {
+   color:red;
+}
+
+.soci ul li a.facebook:hover {
+    color:rgb(3, 67, 187);
+ }
+
+ .soci ul li a.instagram:hover {
+    color: orangered;
+ }
+ 
+ 
+
+/* PROJEKCIJE.HTML */
+
+.LP {
+    background-color: black;
+}
+
+.LP .kontenjer [class *= f- ] img {
+    width: 220px;
+    height: 320px;
+}
+
+.LP .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+[class *= f-] {
+
+    background: var(--sek_boj);
+    border-radius: 20px;
+
+}
+
+[class *= f-] h4 {
+
+    width: 220px;
+    height:90px;
+}
+
+[class *= f-] .prim_dug:hover {
+    background-color: var(--sve_boj);
+    color:black;
+    cursor: pointer;
+}
+
+.OB {
+    background-color: var(--sve_boj);
+}
+
+
+/* REZERVACIJA.HTML */
+
+.REZ {
+    background-color: var(--sve_boj);
+}
+
+.REZ .SLIKE_REZ img {
+    max-width: 100%;
+    max-height: 650px;
+    border-left: 3px solid var(--prim_boj);
+    padding: 20px;
+}
+
+.REZ .SLIKE_REZ .MOB_SLI {
+    border-left: none;
+    border-right: 3px solid var(--prim_boj);;
+}
+
+
+
+input:not(input[type="radio"]) {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+   
+
+}
+
+.REZ .flex {
+    flex-wrap: wrap;
+}
+
+input[type = "submit"] {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.kontrola.flex {
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.kontrola.uspeh input {
+    border: 2px solid green;
+}
+
+.kontrola.greska input {
+    border: 2px solid red;
+}
+
+.kontrola .greska {
+    color: red;
+    font-size: 0.7rem;
+    height: 10px;
+    grid-column: 1 / span 2;
+    justify-self: flex-end;
+   
+}
+
+
+.kontrola.flex {
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+
+form .radio {
+    flex-wrap: wrap;
+
+}
+
+select {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: var(--sve_boj);
+   
+}
+
+
+/* GALERIJA.HTML */
+
+.GAL1 {
+    background-color: var(--sek_boj);
+}
+
+.GAL2 {
+    background-color: black;
+}
+
+.GAL3 {
+    background-color: var(--sve_boj);
+}
+
+[class *= GAL] .kontenjer img {
+    width: 250px;
+    margin-top: 10px;
+}
+
+[class *= GAL] .kontenjer .tg {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow:2px 4px 10px rgba(118, 7, 221);
+}
+
+[class *= GAL] .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+
+
+/* NASA_PRICA.HTML */
+
+
+.DRVO * .grid-3 {
+    grid-template-columns: 1fr 4px 1fr;
+    gap: 0px;
+    
+}
+
+.grana1 {
+    margin: 0 20px 20px 20px;
+}
+
+.grana3 {
+    box-shadow: 5px 5px 10px var(--tam_boj);
+}
+
+
+.grana3 p {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.grana3 img[alt = "tintin1"] {
+    max-width: 200px;
+    transform: rotate(20deg);
+    float: right;
+}
+
+
+.grana3 img[alt = "tintin2"] {
+    max-width: 160px;
+    transform: rotate(-20deg);
+    float: right;
+}
+
+.grana3 img[alt="marvel1"] {
+    max-width: 460px;
+    padding: 20px;
+}
+
+
+.DRVO * .grid-3 .grana2 {
+    position: relative;
+    background:var(--prim_boj);
+    height: 100%;
+}
+
+.tacka {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--tam_boj);
+    border-radius: 50%;
+}
+
+.donjtac {
+    top: 100%;
+}
+
+/* KONTAKT.HTML */
+
+
+ 
+.KONT .flex {
+    flex-wrap: wrap;
+}
+
+
+.KONT .kontenjer .grid .kom {
+    resize: none;
+    color: var(--sve_boj);
+}
+
+
+
+
+
+/* Tekst, Margine i Padinzi */
+
+.t1 {
+    font-size: 1rem;
+}
+
+
+.t2 {
+    font-size: 1.5rem;
+}
+
+
+.t3 {
+    font-size: 2rem;
+}
+
+
+.t4 {
+    font-size: 2.5rem;
+}
+
+
+.p1 {
+    padding: 10px;
+}
+
+
+.p2 {
+    padding: 15px;
+}
+
+
+.p3 {
+    padding: 20px;
+}
+
+
+.p4 {
+    padding: 25px;
+}
+
+
+.p5 {
+    padding: 30px;
+}
+
+.my1 {
+    margin: 10px 0px;
+}
+
+.my2 {
+    margin: 20px 0px;
+}
+
+.my3 {
+    margin: 30px 0px;
+}
+
+.my4 {
+    margin: 40px 0px;
+}
+
+.my5 {
+    margin: 50px 0px;
+}
+
+.m1 {
+    margin: 10px;
+
+}
+
+.m2 {
+    margin: 20px;
+}
+
+.m3 {
+    margin: 30px;
+}
+
+.m4 {
+    margin: 40px;
+}
+
+.boldi {
+    font-weight: bold;
+}
+
+.c {
+    text-align: center;
+}
+
+.r {
+    text-align: right;
+  
+
+}
+
+
+
+
+
+/* Medija upiti */
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+
+
+    /* POCETNA_STRANA.HTML */
+
+  
+
+    /* Naslovna */
+
+    .SN .kontenjer {
+        flex-wrap: wrap;
+    }
+
+   
+    .cincin {
+        
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    nav {
+        flex-basis: 100%;
+    }
+
+
+
+    nav ul li {
+    margin: 10px;
+    background: var(--tam_boj);
+    color:var(--prim_boj);
+    padding: 20px;
+    width: 100%;
+    }
+
+    nav ul li a {
+        color: var(--prim_boj);
+        padding: 10px;
+        transition: all 0.3s cubic-bezier(0,1.4,1,-1.22);
+        font-size: 1.2rem;
+        
+     
+    
+    }
+
+    .txt_ban {
+        padding: 20px;
+    }
+
+
+    .rez {
+        border-top: var(--tam_boj) 2px solid;
+        border-left: none;
+    }
+
+
+
+
+
+/* Podnozje */
+
+
+.POD .flex .soci li {
+    
+    margin-bottom: 20px;
+}
+
+footer.POD .flex {
+    flex-wrap: wrap-reverse;
+}
+
+
+.POD .soci  {
+    width: 100%;
+   
+}
+
+.soci ul {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* REZERVACIJA.HTML */
+
+
+/* Forma */
+
+form.FORM_REZ  .grid-2 {
+    grid-template-columns: 1fr;
+}
+
+
+
+input[type = "submit"] {
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+    
+}
+
+form.FROM_REZ {
+    padding: 0px;
+}
+
+
+.kontrola.grid.grid-2 {  /* GRID ----> FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* KONTAKT.HTML */
+
+form.FORM_KON .grid-2 {
+    grid-template-columns: 1fr;
+}
+
+details {
+    padding: 10px !important;
+    font-size: 1rem !important;
+}
+
+.qa .kontenjer {
+    padding: 0px;
+}
+
+p[class *= odg] {
+    padding: 0px;
+}
+
+
+
+
+
+    .t1 {
+        font-size: 1rem;
+    }
+    
+    
+    .t2 {
+        font-size: 1.2rem;
+    }
+    
+    
+    .t3 {
+        font-size: 1.5rem;
+    }
+    
+    
+    .t4 {
+        font-size: 2rem;
+    }
+    
+    .m1 {
+        margin: 5px;
+    
+    }
+    
+    .m2 {
+        margin: 10px;
+    }
+    
+    .m3 {
+        margin: 20px;
+    }
+
+    .my1 {
+        margin: 5px 0px;
+    }
+    
+    .my2 {
+        margin: 10px 0px;
+    }
+    
+    .my3 {
+        margin: 15px 0px;
+    }
+    
+    .my4 {
+        margin: 20px 0px;
+    }
+    
+    .my5 {
+        margin: auto 0px;
+    }
+}
+
+
+
+/* Animacije */
+
+@keyframes anim1 {
+  
+   
+    0% {
+       color: black;
+    }
+
+    25% {
+        color: var(--prim_boj);
+       
+    }
+
+    50% {
+        color:var(--sek_boj);
+    }
+
+    75% {
+   
+        color: var(--prim_boj);
+    }
+
+    100% {
+       color: black;
+    }
+
+}
+
+
+/* Problem sa navigacijom */
+@media screen and (max-width: 1090px)  {
+
+     /* Naslovna */
+
+     .SN .kontenjer {
+        flex-wrap: wrap;
+    }
+
+    
+    .SN .flex {
+        justify-content: space-around;
+    }
+
+    .cincin {
+        
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    nav {
+        flex-basis: 100%;
+    }
+
+    
+    nav ul li a {
+        color: var(--prim_boj);
+        padding: 10px;
+        transition: all 0.3s cubic-bezier(0,1.4,1,-1.22);
+        font-size: 1.2rem;
+     
+    
+    }
+
+    nav ul li {
+    margin: 10px;
+    background: var(--tam_boj);
+    color:var(--prim_boj);
+    padding: 20px;
+    width: 100%;
+    }
+
+        
+    .rez {
+        border-top: var(--tam_boj) 2px solid;
+        border-left: none;
+    }
+
+
+/* KONTAKT.HTML */
+
+
+    
+}
+
+
+/* DRVO */
+
+@media screen and (max-width: 1000px) {
+
+    /* NASA_PRICA.HTML */
+
+    .DRVO * .grid-3 {                 /* GRID -----> FLEX */
+        display: flex;
+        flex-direction: column;
+      
+    }
+ 
+    .DRVO .kontenjer .par :first-child {
+        order: 3;
+    }
+
+    .DRVO .kontenjer .par :nth-child(2) {
+        order: 2;
+    }
+
+    .drvo .kontenjer .par :last-child {
+        order: 1;
+    }
+
+
+    .donjtac {
+        display: none;
+    }
+  
+    .grana3 p {
+        font-size: 1rem;
+    }
+
+
+    .DRVO .grid-3 .grana2 {
+        height: 300px;
+        max-width: 4px;
+        margin: 0 auto;
+     
+    }
+
+    .DRVO .grid-3 .grana3 {
+        justify-self: center;
+        max-width: 70%;
+        margin-top:0px;
+    }
+
+
+    .DRVO .grana1 .vreme_datum {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    
+
+    
+}

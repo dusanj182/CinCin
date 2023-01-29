@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0667bb56c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+    <title>CinCin</title>
+</head>
+
+<!--Sekcija Naslova-->
+
+<body >
+    <div class="SN">
+        <div class="kontenjer flex">
+            <div class="cincin p4 flex">
+                <h1 class="t3">CinCin</h1>
+                <i class="m2 fas fa-crow fa-2x"></i>
+            </div>
+            <nav>
+                <ul class="boldi p4 flex">
+                    <li><a href="pocetna_strana.html">Početna</a></li>
+                    <li><a href="projekcije.html">Projekcije</a></li>
+                    <li><a href="rezervacija.html">Rezervacija</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="nasa_prica.html">Naša Priča</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+<!--Forma-->
+
+<section class="REZ">
+    <div class="kontenjer flex">
+        <form id="formi" class="FORM_REZ p5" autocomplete="off" onsubmit="dodajRed()" validate>
+            <h2 class="karta2 my2 t3 c P2">REZERVIŠITE KARTU DANAS</h2>
+            <div class="OI boldi karta2 my-4 p5 ">
+                <!-- Osnovne Info-->
+                <div class="kontrola grid grid-2">
+                    <div class="greska"></div>
+                <label class="my1 t2 boldi" for="ime">Unesite ime:</label>
+                <input class="my1" type="text" name="ime" id="ime_id" placeholder="Ime" required>
+                
+            </div>
+            <div class="kontrola grid grid-2">
+                <div class="greska"></div>
+                <label class="my1 t2 boldi" for="prezime">Unesite prezime:</label>
+                <input class="my1" type="text" name="prezime" id="prezime_id" placeholder="Prezime" required>
+        
+                </div>
+                <div class="kontrola grid grid-2 ">
+                    <div class="greska"></div>
+                <label  class="my1t2 t2 boldi" for="radio">Unesite vasu imejl adresu:</label>
+                <input class="my1" type="email" name="mejl" id="imejl_id" placeholder="Email" required>
+            
+                </div>
+                <div class="kontrola grid grid-2">
+                    <div class="greska"></div>
+                <label class="my1 t2 boldi" for="tel">Unesite vas broj telefona:</label>
+                <input  class="my1" type="tel" name="tel" id="tel_id" placeholder="+38160/12-34-567"
+                    pattern="[+]{1}381{1}[0-9]{2}/[0-9]{2}-[0-9]{2}-[0-9]{3}" title="+38160/12-34-567" required>
+                   
+            </div>
+            </div>
+            <div class="IF  boldi karta2 my5 p5 ">
+                <!-- Izbor Filma-->
+                <div class="filmizbor grid grid-2">
+                <label class="my1 t2 boldi" for="radio">Izaberite film:</label>
+                <select  class="my1" name="filmovi" id="filmovi_id" onchange="vreme()" required>
+
+                    <option value="f1">Cliff Walkers</option>
+                    <option value="f2">Godzzila vs. Kong</option>
+                    <option value="f3">Dream Horse</option>
+                    <option value="f4">The map of tiny perfect things</option>
+                    <option value="f5">tick, tick... BOOM</option>
+                    <option value="f6">I Care Alot</option>
+                    <option value="f7">Safety</option>
+                    <option value="f8">Pixie</option>
+                    <option value="f9">Gaia</option>
+                    <option value="f10">Palmer</option>
+                    <option value="f11">Dune</option>
+                </select>
+
+            </div>
+                <!--Broj Karata-->
+                <div class="kontrola grid grid-2">
+                    <div class="greska"></div>
+                <label  class="my1 t2 boldi" for="radio">Izaberite broj karata:</label>
+                <input type="number" name="bk" id="karte_id" min="1" max="90" placeholder="Broj karata">
+            </div>
+                <!--Vreme Projekcije-->
+                <div class="radiogrid grid">
+                    <label class="my1 t2 boldi" for="radio">Vreme projekcije:</label>
+                    <div id="vreme" class="radio grid grid-2">
+                        <div id="rad" class="r-1 t1 p1">
+                            <input class="my1" type="radio" value="19:00 / 5.02.2022." name="vp" id="vreme_id" checked> 19:00 / 5.02.2022.
+                        </div>
+                        <div id="rad" class="r-2 t1 p1">
+                            <input class="my1" type="radio" value="20:00 / 5.02.2022." name="vp" id="vreme_id">  20:00 / 5.02.2022.
+                        </div>
+                        <div  id="rad" class="r-3 t1 p1">
+                            <input class="my1" type="radio" value="15:00 / 7.02.2022." name="vp" id="vreme_id">  15:00 / 7.02.2022.
+                        </div>
+                        <div id="rad" class="r-4 t1 p1">
+                            <input class="my1" type="radio" value="19:00 / 7.02.2022." name="vp" id="vreme_id">  19:00 / 7.02.2022.
+                        </div>
+                        <div  id="rad" class="r-5 t1 p1">
+                            <input class="my1" type="radio" value=" 14:00 / 8.02.2022." name="vp" id="vreme_id">  14:00 / 8.02.2022.
+                        </div>
+                        <div  id="rad" class="r-6 t1 p1">
+                            <input class="my1" type="radio" value=" 19:00 / 9.02.2022." name="vp" id="vreme_id"> 19:00 / 9.02.2022.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Naruci-->
+            
+            <input id="sub" class="NAR prim_dug t2 boldi c" onclick="validacija()" type="submit" value="NARUČI">
+         
+        </form>
+
+        <div class="SLIKE_REZ grid">
+            <img src="Slike/cinema.jpg" class="BIOS_SLI" alt="cinemwallpaper">
+            <h1 class="t2 karta3 p4 c">Rezervišite i putem naše aplikacije CinCinApp</h1>
+            <img src="Slike/phone.jpg"  class="MOB_SLI"  alt="phone">
+        </div>
+
+
+
+    </div>
+</section>
+
+    <!--Podnozje-->
+    <footer class="POD p5">
+        <div class="kontenjer flex">
+            <h3 class="boldi">CinCin &copy;</h3>
+            <div class="soci flex">
+                <ul>
+                    <li><a class="facebook" href="https://sr-rs.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook fa-3x"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/" target="_blank"><i
+                                class="fab fa-youtube fa-3x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script defer src="skriptaValidacija1.js"></script> 
+    <script src="skriptaPodaci.js"></script>
+    <!-- <script src="vremeProjekcije.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</body>
+
+</html>

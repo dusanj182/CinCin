@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0667bb56c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+    <title>CinCin</title>
+</head>
+
+<!--Sekcija Naslova-->
+
+<body>
+    <div class="SN">
+        <div class="kontenjer flex">
+            <div class="cincin p4 flex">
+                <h1 class="t3">CinCin</h1>
+                <i class="m2 fas fa-crow fa-2x"></i>
+            </div>
+            <nav>
+                <ul class="boldi p4 flex">
+                    <li><a href="pocetna_strana.html">Početna</a></li>
+                    <li><a href="projekcije.html">Projekcije</a></li>
+                    <li><a href="rezervacija.html">Rezervacija</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="nasa_prica.html">Naša Priča</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <h1 class="karta3 p4 c">Kontaktirajte nas ovde</h1>
+
+    <!--Forma za KONTAKT-->
+
+    <section class="KONT karta2">
+        <div class="kontenjer flex">
+            <form class="FORM_KON p5 " validate>
+
+                <div class="k1 grid grid-2  boldi my-4 p3 ">
+                    <!-- Osnovne Info-->
+                   
+                    
+                      
+                        <label class="my1 t2" for="ime">Unesite ime:</label>
+                        <input class="my1" type="text" name="ime" id="imeAK" placeholder="Ime" required>
+              
+                  
+                      
+                    <label class="my1 t2" for="prezime">Unesite prezime:</label>
+                    <input class="my1" type="text" name="prezime" id="prezimeK" placeholder="Prezime" required>
+                
+                
+               
+                    <label class="my1 t2" for="mejl">Unesite vašu imejl adresu:</label>
+                    <input class="my1" type="email" name="mejl" id="mejlK" placeholder="Email" required>
+                  
+                </div>
+
+                
+               
+                <div class="grid">
+                    <textarea class="kom karta3 m3" name="kom" id="kom" cols="30" rows="10"
+                        placeholder="Kako mozemo da pomognemo?"></textarea>
+                    <input class="nar sek_dug boldi c t2" type="submit"  value="POŠALJI">
+             
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Q&A -->
+    <section class="QA karta1">
+        <div class="kontenjer">
+            <h1 class="p2 c karta3 t2">NAJČEŠĆA PITANJA</h1>
+            <div class="pit1 p2 m2">
+                <details class="my3 p3 c karta2 t2">
+                    <summary>Kako mogu poručiti karte?</summary>
+                    <p class="odg1 p3 m3">Karte možete poručiti direktno na našim blagajnama bioskopa ali i putem naše veb stranice i aplikacije CinCinApp.</p>
+                </details>
+                <details class="my3 p3 c karta2 t2">
+                    <summary>Kako da saznam termine filmova?</summary>
+                    <p class="odg2 p3 m3">Termine filmova možete pogledati prilikom popunjavanje formulara za rezervaciju, automatski će vam izlistati sve termine filmova.</p>
+                </details>
+                <details class="my3 p3 c karta2 t2 ">
+                    <summary>Koje kartice primate?</summary>
+                    <p class="odg3 p3 m3">Master, Maestro i Visa. </p>
+                </details>
+                <details class="my3 p3 c karta2 t2 ">
+                    <summary>Da li postoje kuponi za popuste?</summary>
+                    <p class="odg4 p3 m3">Kuponi za popuste nažalost još uvek nisu dostupni ali se nadamo da ćemo ih u budućnosti uvesti!</p>
+                </details>
+        
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--Podnozje-->
+    <footer class="POD p5">
+        <div class="kontenjer flex">
+            <h3 class="boldi">CinCin &copy;</h3>
+            <div class="soci flex">
+                <ul>
+                    <li><a class="facebook" href="https://sr-rs.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook fa-3x"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/" target="_blank"><i
+                                class="fab fa-youtube fa-3x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="skripta.js"></script>
+</body>
+
+</html>

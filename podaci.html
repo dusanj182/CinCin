@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabelastil.css">
+    <title>Podaci</title>
+</head>
+<body>
+    <table id="TABELA" border="1px solid">
+        <thead>
+            <tr>
+                <th>Email (KEY)</th>
+                <th>OSTALI PODACI (Ime,Prezime,Broj Telefona, Film, Vreme Projekcije)</th>
+             
+            </tr>
+        </thead>
+        <tbody id="podaci">
+
+        </tbody>
+    </table>
+
+    <input type="button" value="PRIKAZI PODATKE" onclick="prikazi()">
+    <input type="button" value="SAKRIJ PODATKE TABELE" onclick="obrisiTabelu()">
+    <input type="button" value="OBRISI KOMPLETAN LOCALSTORAGE" onclick="obrisiStorage()">
+    
+</body>
+<script src="skriptaPodaci.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</html>
